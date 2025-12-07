@@ -1,10 +1,10 @@
 {
     "name": "medical-pm-manager-web",
-    "version": "1.0.0",
-    "description": "Web-based server version of Medical PM Manager",
+    "version": "1.0.1",
+    "description": "Web-based server version of Medical PM Manager (Render Debug)",
     "main": "server/index.js",
     "scripts": {
-        "start": "find . -maxdepth 3 -not -path '*/node_modules/*' && node database/migrate.js && node server/index.js",
+        "start": "ls -R && node database/migrate.js && node server/index.js",
         "dev": "nodemon server/index.js",
         "migrate": "node database/migrate.js",
         "build": "npm install && cd client && npm install && npm run build",
