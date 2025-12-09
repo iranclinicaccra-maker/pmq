@@ -1,0 +1,2 @@
+This is a test file to verify GitHub Desktop sync.
+If you see this file in GitHub Desktop, it means you are copying from the correct folder.

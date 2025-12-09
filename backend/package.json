@@ -1,0 +1,30 @@
+{
+    "name": "medical-pm-manager-web",
+    "version": "1.0.1",
+    "description": "Web-based server version of Medical PM Manager (Render Debug)",
+    "main": "server/index.js",
+    "scripts": {
+        "start": "ls -R && node database/migrate.js && node server/index.js",
+        "dev": "nodemon server/index.js",
+        "migrate": "node database/migrate.js",
+        "build": "npm install && cd client && npm install && npm run build",
+        "build:client": "cd client && npm install && npm run build"
+    },
+    "dependencies": {
+        "bcrypt": "^5.1.0",
+        "compression": "^1.7.4",
+        "connect-pg-simple": "^9.0.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.0",
+        "express": "^4.18.2",
+        "express-session": "^1.17.3",
+        "helmet": "^7.1.0",
+        "multer": "^1.4.5-lts.1",
+        "pg": "^8.11.3",
+        "winston": "^3.11.0"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2",
+        "nodemon": "^3.0.1"
+    }
+}
